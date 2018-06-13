@@ -1,0 +1,39 @@
+﻿@using Models
+@{
+    Layout = null;
+}
+@{ 
+    Account account = new Account();
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/login.css">
+
+    <title>Musicapp</title>
+
+</head>
+<body class="background">
+    <div class="container">
+        <div class="card card-container">
+            <p class="profile-name-card"></p>
+            <form asp-controller="Log_in" asp-action="Register" class="form-signin">
+                <input asp-for="@account.Name" type="text" class="form-control" placeholder="Username" required autofocus>
+                <input asp-for="@account.Password" type="password" class="form-control" placeholder="Password" required>
+                <input asp-for="@account.Email" type="email" class="form-control" placeholder="Email" required>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@using Models
+@model Account
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/login.css">
+
+    <title>Musicapp</title>
+
+</head>
+<body class="background">
+    <div class="container">
+        <div class="card card-container">
+            <img class="profile-img-card" src="~/images/account.png" />
+            <p class="profile-name-card"></p>
+            <form asp-controller="Log_in" asp-action="Log_in" class="form-signin">
+                <input asp-for="@Model.Name" type="text" class="form-control" placeholder="Username" required autofocus>
+                <input asp-for="@Model.Password" type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            </form>
+            <form asp-controller="Log_in" asp-action="Registerpage">
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">
+                    Register?
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿@using Models
+@model View_Model
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 body-content">
+    <ul class="nav nav-pills nav-justified">
+        <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+        <li><a data-toggle="pill" href="#playlist">Playlist</a></li>
+        <li><a data-toggle="pill" href="#songs">Songs</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h3 class="text-center">Home</h3>
+            <p class="text-center">Here will suggestions be displayed</p>
+        </div>
+        <div id="playlist" class="tab-pane fade">
+            <h3 class="text-center">Playlist</h3>
+            <ul class="list-group center-block">
+                @foreach (Playlist playlist in Model.Playlists)
+                {
+                        <li class="list-group-item justify-content-between align-items-center">
+                            @playlist.Name
+                            <span class="badge badge-primary badge-pill defaultbackground">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-list" style="color:white"></span>
+                                </a>
+                            </span>
+                        </li>
+                }
+
+            </ul>
+        </div>
+        <div id="songs" class="tab-pane fade">
+            <h3 class="text-center">Songs</h3>
+            <p class="text-center">Here will the latest songs you listenend be displayed</p>
+        </div>
+    </div>
+</div>
+
+@section Logout
+    {
+    <form asp-controller="Log_in" asp-action="Log_inpage" method="post">
+        <button class="btn btn-default btn-lg" type="submit" onclick="@Url.Action("Log_inpage", "Log_in")">Log out</button>
+    </form>
+}
+
+@section Scripts
+    {
+    <script type="text/javascript">
+        /* Set the width of the side navigation to 350px */
+        function openNavFriends() {
+            document.getElementById("FriendsSidenav").style.width = "350px";
+        }
+
+        /* Set the width of the side navigation to 350px */
+        function openNavPlaylists() {
+            document.getElementById("PlaylistsSidenav").style.width = "350px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNavFriends() {
+            document.getElementById("FriendsSidenav").style.width = "0";
+        }
+        /* Set the width of the side navigation to 0 */
+        function closeNavPlaylists() {
+            document.getElementById("PlaylistsSidenav").style.width = "0";
+        }
+    </script>
+}
+
+

@@ -1,0 +1,126 @@
+body {
+    border: 3px solid #f1f1f1;
+}
+
+.defaultbackground {
+    background-color: #337AB7;
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+    /* Add a hover effect for buttons */
+    button:hover {
+        opacity: 0.8;
+    }
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    width: 100%;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+.avatar {
+    height: 10%;
+    width: 10%;
+}
+
+.glyphicon-music {
+    font-size: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+.glypicon-list {
+    font-size: 26px;
+}
+
+.musicplaying {
+    list-style: none;
+}
+
+.settingsavatar {
+    height: 50%;
+    width: 50%;
+}
+
+.stackbuttons {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.disablelist {
+    list-style: none;
+}
+
+.badge {
+    border-radius: 50%;
+}
+
+.list-group {
+    margin-top: 2%;
+    width: 50%;
+    text-align: center;
+}
+
+.glyph-account {
+    height: 24px;
+    margin-right: -16px;
+    margin-bottom: -6px;
+}
+
+.searchinput {
+    width: 40%;
+}

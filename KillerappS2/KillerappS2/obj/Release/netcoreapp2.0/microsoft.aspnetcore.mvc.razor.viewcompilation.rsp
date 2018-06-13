@@ -1,0 +1,13 @@
+D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=KillerappS2
+--content-root=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\Home\Index.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\Home\Searchpage.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\Log_in\Log_inpage.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\Log_in\Registerpage.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\Shared\Error.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\Shared\_Layout.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\_ViewImports.cshtml
+--file=D:\Studentenjaar 2017-2018\S-S2-Individueel\Killerapp\KillerappS2\KillerappS2\Views\_ViewStart.cshtml
