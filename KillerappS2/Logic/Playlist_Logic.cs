@@ -32,9 +32,9 @@ namespace Logic
                 return false;
             }
         }
-        public bool CheckAddNewSongToPlaylist(Account acc, Song song)
-        {
+        //public bool CheckAddNewSongToPlaylist(Account acc, Song song)
+        //{
             
-        }
+        //}
     }
 }

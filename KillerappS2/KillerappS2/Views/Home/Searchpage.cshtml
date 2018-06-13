@@ -31,14 +31,14 @@
                 @foreach (Song song in Model.Songs)
                  {
                     
-                        <li class="list-group-item justify-content-between align-items-center">
-                            <a>
-                                @song.Title, @foreach (Artist artist in song.Artists)
-                                {@(artist.Name)}, Total Streams: @song.Total_streams
-                            </a>
+                    <li class="list-group-item justify-content-between align-items-center">
+                        <a>
+                            @song.Title, @foreach (Artist artist in song.Artists)
+                            {@(artist.Name)}, Total Streams: @song.Total_streams
+                        </a>
                     <span class="badge badge-primary badge-pill defaultbackground"><a href="#"><span class="glyphicon glyphicon-list" style="color:white"></span></a></span>
+                    <span class="badge badge-primary badge-pill defaultbackground"><a id="search" href="javascript:void(0);" onclick="SearchWiki();"><span class="glyphicon glyphicon-info-sign" style="color:white"></span></a></span>
                     </li>
-                    
                  }
                 </ul>
             }
@@ -88,6 +88,7 @@
 
 @section Scripts
     {
+    <script src="~/js/site.js"></script>
     <script type="text/javascript">
         /* Set the width of the side navigation to 350px */
         function openNavFriends() {
@@ -106,9 +107,8 @@
         /* Set the width of the side navigation to 0 */
         function closeNavPlaylists() {
                 document.getElementById("PlaylistsSidenav").style.width = "0";
-            }
-    </script>
-    <script>
+
+        }
         function GetSearchTerm(elem) {
             var value = elem.value;
             return value;

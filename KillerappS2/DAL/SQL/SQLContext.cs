@@ -475,16 +475,16 @@ namespace DAL
         public List<Song> GetAllSongsDatabase(Song song)
         {
             List<Song> AllSongs = new List<Song>();
-            
             try
             {
                 using (MySqlConnection conn = new MySqlConnection(connecstring))
                 {
                     conn.Open();
+                    foreach(int song_id in GetSong_idBySearch(song))
                     using (MySqlCommand cmd = new MySqlCommand("s2_killerapp_GetArtistNameBySong_Id", conn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("in_Title", "%" + song.Title + "%");
+                        cmd.Parameters.AddWithValue("in_Song_id", song_id);
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             Song newsong = null;
